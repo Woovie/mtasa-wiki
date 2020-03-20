@@ -9,7 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@master
+    - name: Checkout master
+      uses: actions/checkout@v2
+      with:
+        submodules: 'recursive'
     - name: Login to GitHub Packages
       run: docker login -u ${{ secrets.GITHUB_USERNAME }} -p ${{ secrets.GITHUB_TOKEN }} docker.pkg.github.com
     - name: Build the Docker image

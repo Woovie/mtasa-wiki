@@ -6,4 +6,4 @@ RUN hugo
 
 FROM nginx:latest
 COPY --from=simphugo /docs/public/ /web
-RUN ls -lah /web
+RUN find /web -type f

@@ -1,4 +1,5 @@
 <head>
     <title>"{{ .Site.BaseURL }}"</title>
-    {{ $bulma += resources.Get ""}}
+    {{ $bulma := resources.Get ""}}
+    <link href="{{ $bulma.Permalink }}" rel="stylesheet">
 </head>

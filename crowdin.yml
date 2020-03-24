@@ -1,0 +1,3 @@
+files:
+  - source: /docs/themes/mta-wiki/layouts/index.html
+    translation: /docs/themes/mta-wiki/layouts/l10n/%two_letters_code%/%original_file_name%
